@@ -1,0 +1,9 @@
+npx create-react-app blogapi
+cd blog api
+yarn start
+yarn add react-router-dom
+yarn add @material-ui/core
+pip install django-cors-headers
+
+info:
+Strict mode
