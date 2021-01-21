@@ -1,14 +1,29 @@
-# React
-## 1. Instalasi
-- 1.1. Instalasi React
+-## Seri ini adalah bagian dari project DRF, lanjutan seri backend [disini](https://github.com/ArisDjango/CrudVeryAcademy)
+# DAFTAR ISI
+- [ B. FRONT END - REACT ](#B)
+    - [ 1. Instalasi React.js ](#B1)
+    - [ 2. Struktur Components project ](#B2)
+    - [ 3. index.js ](#B3)
+    - [ 4. Testing Koneksi dari django API ](#B4)
+    - [ 5. Header.js ](#B5)
+    - [ 6. Footer.js ](#B6)
+    - [ 7. Posts.js ](#B7)
+    - [ 8. PostsLoading.js ](#B8)
+    - [ 9. App.js ](#B9)
+
+<a name="B"></a>
+# B. FRONT END - REACT
+<a name="B1"></a>
+## 1. Instalasi React.js
+- Instalasi React
     - `npx create-react-app blogapi`
     - `cd blogapi`
     - `yarn start`
     - Install beberapa library:
         - `yarn add react-router-dom`
         - `yarn add @material-ui/core`
-
-## 2. Struktur Components
+<a name="B2"></a>
+## 2. Struktur Components project
 - App.js --> Mengambil data dari api, mengambil kondisi dari postloading.js 
 - Buat Folder `components`, lalu buat file baru
     - Footer.js
@@ -17,6 +32,7 @@
     - PostLoading.js --> menampilkan pesan loading selama koneksi dengan api
 - index.js --> routing, switch url, merender  semua component
 
+<a name="B3"></a>
 ## 3. index.js
 
 - Tujuan:
@@ -67,7 +83,7 @@
 
             ReactDOM.render(routing, document.getElementById('root'));
             ```
-
+<a name="B4"></a>
 ## 4. Testing Koneksi dari django API
 - Tujuan:
     - Melakukan testing koneksi antara django api dengan react,
@@ -118,6 +134,7 @@
     - Jika ada ERROR: Permasalahan yang muncul biasnya ada di CORS, ada di setting/allowed, alamat yang diijinkan harus sesuai dengan yg ada di browser dan settingan frontend, contoh http/https, 127.0.0.1/localhost.
     - setelah  koneksi frontend-backend dipastikan berhasil. saatnya membuat code yang sesungguhnya.
 
+<a name="B5"></a>
 ## 5. Header.js
 
 - Pada Header.js, Buat komponen `<Header>`
@@ -167,11 +184,13 @@
     - Pada Footer.js, Buat komponen `<Footer>`
         - code:
 
+<a name="B6"></a>
 ## 6. Footer.js
 
 - Pada Footer.js, Buat komponen `<Footer`
     - code:
 
+<a name="B7"></a>
 ## 7. Posts.js
 - Tujuan:
     - sebagai props,
@@ -278,6 +297,7 @@
 
             export default Posts; 
             ```
+<a name="B8"></a>
 ## 8. PostsLoading.js
 - Tujuan:
     - Menghandle kondisi loading
@@ -311,6 +331,7 @@
         export default PostLoading;
         ```
 
+<a name="B9"></a>
 ## 9. App.js
 - Tujuan:
     - Menghandle pengambilan data api dari backend
