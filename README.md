@@ -1,4 +1,6 @@
 -## Seri ini adalah bagian dari project DRF, lanjutan seri backend [disini](https://github.com/ArisDjango/CrudVeryAcademy)
+
+TES
 # DAFTAR ISI
 - [ B. FRONT END - REACT ](#B)
     - [ 1. Instalasi React.js ](#B1)
